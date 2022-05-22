@@ -1,0 +1,693 @@
+local SakuraStandGUI = Instance.new("ScreenGui")
+local Frame3 = Instance.new("ImageButton")
+local F4 = Instance.new("TextLabel")
+local Storage3 = Instance.new("TextButton")
+local Storage1 = Instance.new("TextButton")
+local Storage4 = Instance.new("TextButton")
+local ArcadeSpin = Instance.new("TextButton")
+local Storage2 = Instance.new("TextButton")
+local Storage5 = Instance.new("TextButton")
+local Storage6 = Instance.new("TextButton")
+local WP1 = Instance.new("TextButton")
+local WP2 = Instance.new("TextButton")
+local WP3 = Instance.new("TextButton")
+local WP4 = Instance.new("TextButton")
+local WP5 = Instance.new("TextButton")
+local WP6 = Instance.new("TextButton")
+local TP1 = Instance.new("TextButton")
+local IY = Instance.new("TextButton")
+local cred = Instance.new("TextLabel")
+local cred2 = Instance.new("TextLabel")
+local Loadouts = Instance.new("ScrollingFrame")
+local Button3 = Instance.new("TextButton")
+local Button4 = Instance.new("TextButton")
+local Button2 = Instance.new("TextButton")
+local Button = Instance.new("TextButton")
+local Button5 = Instance.new("TextButton")
+local Button6 = Instance.new("TextButton")
+local Button7 = Instance.new("TextButton")
+local Button8 = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local Loadouts2 = Instance.new("ScrollingFrame")
+local Button9 = Instance.new("TextButton")
+local Button10 = Instance.new("TextButton")
+local Button11 = Instance.new("TextButton")
+local Button12 = Instance.new("TextButton")
+local Button13 = Instance.new("TextButton")
+local Button14 = Instance.new("TextButton")
+local TextLabel2 = Instance.new("TextLabel")
+local Frame4 = Instance.new("ImageButton")
+
+
+SakuraStandGUI.Name = "SakuraStandGUI"
+SakuraStandGUI.Parent = game.CoreGui
+SakuraStandGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame3.Name = "Frame3"
+Frame3.Parent = SakuraStandGUI
+Frame3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame3.BackgroundTransparency = 1.000
+Frame3.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Frame3.BorderSizePixel = 0
+Frame3.Position = UDim2.new(0.392242986, 0, 2.348190546, 0)
+Frame3.Size = UDim2.new(0, 600, 0, 400)
+Frame3.Image = "rbxassetid://2790382281"
+Frame3.ImageColor3 = Color3.fromRGB(35, 35, 35)
+Frame3.ScaleType = Enum.ScaleType.Slice
+Frame3.SliceCenter = Rect.new(4, 4, 252, 252)
+
+Frame4.Name = "Frame4"
+Frame4.Parent = SakuraStandGUI
+Frame4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame4.BackgroundTransparency = 1.000
+Frame4.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Frame4.BorderSizePixel = 0
+Frame4.Position = UDim2.new(0.392242986, 0, 2.348190546, 0)
+Frame4.Size = UDim2.new(0, 600, 0, 400)
+Frame4.Image = "rbxassetid://2790382281"
+Frame4.ImageColor3 = Color3.fromRGB(35, 35, 35)
+Frame4.ScaleType = Enum.ScaleType.Slice
+Frame4.SliceCenter = Rect.new(4, 4, 252, 252)
+
+F4.Name = "F4"
+F4.Parent = Frame3
+F4.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+F4.BorderSizePixel = 0
+F4.Position = UDim2.new(0.487002629, 0, 0.0644191504, 0)
+F4.Size = UDim2.new(0, 18, 0, 12)
+F4.Font = Enum.Font.SourceSans
+F4.Text = "SakuraStandGUI"
+F4.TextColor3 = Color3.fromRGB(255, 255, 255)
+F4.TextSize = 50.000
+
+
+Storage3.Name = "Storage3"
+Storage3.Parent = Frame3
+Storage3.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Storage3.BorderSizePixel = 0
+Storage3.Position = UDim2.new(0.720000005, 0, 0.405406063, 0)
+Storage3.Size = UDim2.new(0, 156, 0, 31)
+Storage3.Font = Enum.Font.SourceSans
+Storage3.Text = "Storage 3"
+Storage3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Storage3.TextSize = 20.000
+Storage3.MouseButton1Down:connect(function()
+game:GetService("ReplicatedStorage").StorageRemote.Slot3:FireServer()
+
+end)
+
+Storage1.Name = "Storage1"
+Storage1.Parent = Frame3
+Storage1.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Storage1.BorderSizePixel = 0
+Storage1.Position = UDim2.new(0.720000005, 0, 0.253962389, 0)
+Storage1.Size = UDim2.new(0, 156, 0, 31)
+Storage1.Font = Enum.Font.SourceSans
+Storage1.Text = "Storage 1"
+Storage1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Storage1.TextSize = 20.000
+Storage1.MouseButton1Down:connect(function()
+game:GetService("ReplicatedStorage").StorageRemote.Slot1:FireServer()
+
+end)
+
+Storage4.Name = "Storage4"
+Storage4.Parent = Frame3
+Storage4.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Storage4.BorderSizePixel = 0
+Storage4.Position = UDim2.new(0.720000005, 0, 0.481368415, 0)
+Storage4.Size = UDim2.new(0, 156, 0, 31)
+Storage4.Font = Enum.Font.SourceSans
+Storage4.Text = "Storage 4"
+Storage4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Storage4.TextSize = 20.000
+Storage4.MouseButton1Down:connect(function()
+game:GetService("ReplicatedStorage").StorageRemote.Slot4:FireServer()
+
+end)
+
+ArcadeSpin.Name = "ArcadeSpin"
+ArcadeSpin.Parent = Frame3
+ArcadeSpin.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+ArcadeSpin.BorderSizePixel = 0
+ArcadeSpin.Position = UDim2.new(0.720000005, 0, 0.180999994, 0)
+ArcadeSpin.Size = UDim2.new(0, 156, 0, 31)
+ArcadeSpin.Font = Enum.Font.SourceSans
+ArcadeSpin.Text = "Arcade Spin $250"
+ArcadeSpin.TextColor3 = Color3.fromRGB(255, 255, 255)
+ArcadeSpin.TextSize = 20.000
+ArcadeSpin.MouseButton1Down:connect(function()
+local args = {
+    [1] = false,
+    [2] = false
+}
+
+game:GetService("ReplicatedStorage").GlobalUsedRemotes.ArcadePurchase:FireServer(unpack(args))
+
+end)
+
+Storage2.Name = "Storage2"
+Storage2.Parent = Frame3
+Storage2.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Storage2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Storage2.BorderSizePixel = 0
+Storage2.Position = UDim2.new(0.720000005, 0, 0.332684211, 0)
+Storage2.Size = UDim2.new(0, 156, 0, 31)
+Storage2.Font = Enum.Font.SourceSans
+Storage2.Text = "Storage 2"
+Storage2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Storage2.TextSize = 20.000
+Storage2.MouseButton1Down:connect(function()
+game:GetService("ReplicatedStorage").StorageRemote.Slot2:FireServer()
+
+end)
+
+Storage5.Name = "Storage5"
+Storage5.Parent = Frame3
+Storage5.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Storage5.BorderSizePixel = 0
+Storage5.Position = UDim2.new(0.720000005, 0, 0.560330873, 0)
+Storage5.Size = UDim2.new(0, 156, 0, 31)
+Storage5.Font = Enum.Font.SourceSans
+Storage5.Text = "Storage 5"
+Storage5.TextColor3 = Color3.fromRGB(255, 255, 255)
+Storage5.TextSize = 20.000
+Storage5.MouseButton1Down:connect(function()
+game:GetService("ReplicatedStorage").StorageRemote.Slot5:FireServer()
+
+end)
+
+Storage6.Name = "Storage6"
+Storage6.Parent = Frame3
+Storage6.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Storage6.BorderSizePixel = 0
+Storage6.Position = UDim2.new(0.720000005, 0, 0.636330873, 0)
+Storage6.Size = UDim2.new(0, 156, 0, 31)
+Storage6.Font = Enum.Font.SourceSans
+Storage6.Text = "Storage 6"
+Storage6.TextColor3 = Color3.fromRGB(255, 255, 255)
+Storage6.TextSize = 20.000
+Storage6.MouseButton1Down:connect(function()
+game:GetService("ReplicatedStorage").StorageRemote.Slot6:FireServer()
+
+end)
+
+WP1.Name = "WP1"
+WP1.Parent = Frame3
+WP1.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+WP1.BorderSizePixel = 0
+WP1.Position = UDim2.new(0.019000005, 0, 0.516330873, 0)
+WP1.Size = UDim2.new(0, 156, 0, 31)
+WP1.Font = Enum.Font.SourceSans
+WP1.Text = "Cafe TP"
+WP1.TextColor3 = Color3.fromRGB(255, 255, 255)
+WP1.TextSize = 20.000
+WP1.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-191, -32, 1450)
+
+end)
+
+WP2.Name = "WP2"
+WP2.Parent = Frame3
+WP2.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+WP2.BorderSizePixel = 0
+WP2.Position = UDim2.new(0.019000005, 0, 0.5872331304, 0)
+WP2.Size = UDim2.new(0, 156, 0, 31)
+WP2.Font = Enum.Font.SourceSans
+WP2.Text = "Shop TP"
+WP2.TextColor3 = Color3.fromRGB(255, 255, 255)
+WP2.TextSize = 20.000
+WP2.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-358, -32, 1815)
+
+end)
+
+WP3.Name = "WP3"
+WP3.Parent = Frame3
+WP3.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+WP3.BorderSizePixel = 0
+WP3.Position = UDim2.new(0.019000005, 0, 0.6581353878, 0)
+WP3.Size = UDim2.new(0, 156, 0, 31)
+WP3.Font = Enum.Font.SourceSans
+WP3.Text = "Library TP"
+WP3.TextColor3 = Color3.fromRGB(255, 255, 255)
+WP3.TextSize = 20.000
+WP3.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-29, -116, 327)
+
+end)
+
+WP4.Name = "WP4"
+WP4.Parent = Frame3
+WP4.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+WP4.BorderSizePixel = 0
+WP4.Position = UDim2.new(0.279000005, 0, 0.516330873, 0)
+WP4.Size = UDim2.new(0, 156, 0, 31)
+WP4.Font = Enum.Font.SourceSans
+WP4.Text = "Die"
+WP4.TextColor3 = Color3.fromRGB(255, 255, 255)
+WP4.TextSize = 20.000
+WP4.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0, -470, 0)
+
+end)
+
+WP5.Name = "WP5"
+WP5.Parent = Frame3
+WP5.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+WP5.BorderSizePixel = 0
+WP5.Position = UDim2.new(0.279000005, 0, 0.5872331304, 0)
+WP5.Size = UDim2.new(0, 156, 0, 31)
+WP5.Font = Enum.Font.SourceSans
+WP5.Text = "Guilds TP"
+WP5.TextColor3 = Color3.fromRGB(255, 255, 255)
+WP5.TextSize = 20.000
+WP5.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-691, -31, 1652)
+
+end)
+
+WP6.Name = "WP6"
+WP6.Parent = Frame3
+WP6.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+WP6.BorderSizePixel = 0
+WP6.Position = UDim2.new(0.279000005, 0, 0.6581353878, 0)
+WP6.Size = UDim2.new(0, 156, 0, 31)
+WP6.Font = Enum.Font.SourceSans
+WP6.Text = "Battle Field"
+WP6.TextColor3 = Color3.fromRGB(255, 255, 255)
+WP6.TextSize = 20.000
+WP6.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-519, -31, 1653)
+
+end)
+
+TP1.Name = "TP1"
+TP1.Parent = Frame3
+TP1.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+TP1.BorderSizePixel = 0
+TP1.Position = UDim2.new(0.720000005, 0, 0.7781353878, 0)
+TP1.Size = UDim2.new(0, 156, 0, 31)
+TP1.Font = Enum.Font.SourceSans
+TP1.Text = "1v1 TP"
+TP1.TextColor3 = Color3.fromRGB(255, 255, 255)
+TP1.TextSize = 20.000
+TP1.MouseButton1Down:connect(function()
+game:GetService("ReplicatedStorage").GlobalUsedRemotes.TPto1v1:FireServer()
+
+end)
+
+IY.Name = "IY"
+IY.Parent = Frame3
+IY.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+IY.BorderSizePixel = 0
+IY.Position = UDim2.new(0.720000005, 0, 0.7072331304, 0)
+IY.Size = UDim2.new(0, 156, 0, 31)
+IY.Font = Enum.Font.SourceSans
+IY.Text = "Infinite Yield"
+IY.TextColor3 = Color3.fromRGB(255, 255, 255)
+IY.TextSize = 20.000
+IY.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+
+end)
+
+cred.Name = "cred"
+cred.Parent = Frame3
+cred.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+cred.BorderSizePixel = 0
+cred.Position = UDim2.new(0.0345162761, 0, 0.816060066, 0)
+cred.Size = UDim2.new(0, 36, 0, 14)
+cred.Font = Enum.Font.SourceSans
+cred.Text = "Credits:"
+cred.TextColor3 = Color3.fromRGB(255, 255, 255)
+cred.TextSize = 25.000
+
+cred2.Name = "cred2"
+cred2.Parent = Frame3
+cred2.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+cred2.BorderSizePixel = 0
+cred2.Position = UDim2.new(0.047465572, 0, 0.902526438, 0)
+cred2.Size = UDim2.new(0, 9, 0, 12)
+cred2.Font = Enum.Font.SourceSans
+cred2.Text = "Zal"
+cred2.TextColor3 = Color3.fromRGB(255, 255, 255)
+cred2.TextSize = 25.000
+
+Loadouts.Name = "Loadouts"
+Loadouts.Parent = Frame3
+Loadouts.Active = true
+Loadouts.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Loadouts.BorderSizePixel = 0
+Loadouts.Position = UDim2.new(0.0145162687, 0, 0.18254132, 0)
+Loadouts.Size = UDim2.new(0, 210, 0, 121)
+Loadouts.CanvasSize = UDim2.new(0, 0, 1, 0)
+
+Button3.Name = "Button3"
+Button3.Parent = Loadouts
+Button3.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Button3.BorderSizePixel = 0
+Button3.Position = UDim2.new(0, 0, -0.00375939859, 0)
+Button3.Size = UDim2.new(0, 214, 0, 31)
+Button3.Font = Enum.Font.SourceSans
+Button3.Text = "Sell Arrow"
+Button3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button3.TextSize = 20.000
+Button3.MouseButton1Down:connect(function()
+local args = {
+    [1] = "Arrow"
+}
+
+game:GetService("ReplicatedStorage").GlobalUsedRemotes.SellItem:FireServer(unpack(args))
+end)
+
+Button4.Name = "Button4"
+Button4.Parent = Loadouts
+Button4.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Button4.BorderSizePixel = 0
+Button4.Position = UDim2.new(0, 0, 0.07466165599, 0)
+Button4.Size = UDim2.new(0, 214, 0, 31)
+Button4.Font = Enum.Font.SourceSans
+Button4.Text = "Sell Rokakaka"
+Button4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button4.TextSize = 20.000
+Button4.MouseButton1Down:connect(function()
+local args = {
+    [1] = "Rokakaka"
+}
+
+game:GetService("ReplicatedStorage").GlobalUsedRemotes.SellItem:FireServer(unpack(args))
+
+end)
+Button2.Name = "Button12"
+Button2.Parent = Loadouts
+Button2.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Button2.BorderSizePixel = 0
+Button2.Position = UDim2.new(0, 0, 0.14556391339, 0)
+Button2.Size = UDim2.new(0, 214, 0, 31)
+Button2.Font = Enum.Font.SourceSans
+Button2.Text = "Sell Mysterious Camera"
+Button2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button2.TextSize = 20.000
+Button2.MouseButton1Down:connect(function()
+local args = {
+    [1] = "Mysterious Camera"
+}
+
+game:GetService("ReplicatedStorage").GlobalUsedRemotes.SellItem:FireServer(unpack(args))
+
+end)
+Button.Name = "Button"
+Button.Parent = Loadouts
+Button.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Button.BorderSizePixel = 0
+Button.Position = UDim2.new(0, 0, 0.21646617079, 0)
+Button.Size = UDim2.new(0, 214, 0, 31)
+Button.Font = Enum.Font.SourceSans
+Button.Text = "Sell Stop Sign"
+Button.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button.TextSize = 20.000
+Button.MouseButton1Down:connect(function()
+local args = {
+    [1] = "Stop Sign"
+}
+
+game:GetService("ReplicatedStorage").GlobalUsedRemotes.SellItem:FireServer(unpack(args))
+
+end)
+Button5.Name = "Button5"
+Button5.Parent = Loadouts
+Button5.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Button5.BorderSizePixel = 0
+Button5.Position = UDim2.new(-0.00436681043, 0, 0.28736842819, 0)
+Button5.Size = UDim2.new(0, 214, 0, 31)
+Button5.Font = Enum.Font.SourceSans
+Button5.Text = "Sell Hamon Manual"
+Button5.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button5.TextSize = 20.000
+Button5.MouseButton1Down:connect(function()
+local args = {
+    [1] = "Hamon Manual"
+}
+
+game:GetService("ReplicatedStorage").GlobalUsedRemotes.SellItem:FireServer(unpack(args))
+
+end)
+Button6.Name = "Button6"
+Button6.Parent = Loadouts
+Button6.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Button6.BorderSizePixel = 0
+Button6.Position = UDim2.new(0, 0, 0.35827068559, 0)
+Button6.Size = UDim2.new(0, 214, 0, 31)
+Button6.Font = Enum.Font.SourceSans
+Button6.Text = "Sell Stone Mask"
+Button6.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button6.TextSize = 20.000
+Button6.MouseButton1Down:connect(function()
+local args = {
+    [1] = "Stone Mask"
+}
+
+game:GetService("ReplicatedStorage").GlobalUsedRemotes.SellItem:FireServer(unpack(args))
+
+end)
+Button7.Name = "Button7"
+Button7.Parent = Loadouts
+Button7.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Button7.BorderSizePixel = 0
+Button7.Position = UDim2.new(0, 0, 0.42917294299, 0)
+Button7.Size = UDim2.new(0, 214, 0, 31)
+Button7.Font = Enum.Font.SourceSans
+Button7.Text = "Sell Haunted Sword"
+Button7.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button7.TextSize = 20.000
+Button7.MouseButton1Down:connect(function()
+local args = {
+    [1] = "Haunted Sword"
+}
+
+game:GetService("ReplicatedStorage").GlobalUsedRemotes.SellItem:FireServer(unpack(args))
+
+end)
+Button8.Name = "Button8"
+Button8.Parent = Loadouts
+Button8.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Button8.BorderSizePixel = 0
+Button8.Position = UDim2.new(0, 0, 0.50007520039, 0)
+Button8.Size = UDim2.new(0, 214, 0, 31)
+Button8.Font = Enum.Font.SourceSans
+Button8.Text = "Sell All Items"
+Button8.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button8.TextSize = 20.000
+Button8.MouseButton1Down:connect(function()
+local args = {
+    [1] = "Haunted Sword"
+}
+
+game:GetService("ReplicatedStorage").GlobalUsedRemotes.SellItem:FireServer(unpack(args))
+
+local args = {
+    [1] = "Rokakaka"
+}
+
+game:GetService("ReplicatedStorage").GlobalUsedRemotes.SellItem:FireServer(unpack(args))
+
+local args = {
+    [1] = "Arrow"
+}
+
+game:GetService("ReplicatedStorage").GlobalUsedRemotes.SellItem:FireServer(unpack(args))
+
+local args = {
+    [1] = "Mysterious Camera"
+}
+
+game:GetService("ReplicatedStorage").GlobalUsedRemotes.SellItem:FireServer(unpack(args))
+
+local args = {
+    [1] = "Stone Mask"
+}
+
+game:GetService("ReplicatedStorage").GlobalUsedRemotes.SellItem:FireServer(unpack(args))
+
+local args = {
+    [1] = "Stop Sign"
+}
+
+game:GetService("ReplicatedStorage").GlobalUsedRemotes.SellItem:FireServer(unpack(args))
+
+local args = {
+    [1] = "Hamon Manual"
+}
+
+game:GetService("ReplicatedStorage").GlobalUsedRemotes.SellItem:FireServer(unpack(args))
+
+end)
+TextLabel.Parent = Frame3
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.3645161271, 0, 0.14872167, 0)
+TextLabel.Size = UDim2.new(0, 136, 0, 5)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Buy Item:           "
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 25.000
+
+Loadouts2.Name = "Loadouts2"
+Loadouts2.Parent = Frame3
+Loadouts2.Active = true
+Loadouts2.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Loadouts2.BorderSizePixel = 0
+Loadouts2.Position = UDim2.new(0.3667162687, 0, 0.18254132, 0)
+Loadouts2.Size = UDim2.new(0, 210, 0, 121)
+Loadouts2.CanvasSize = UDim2.new(0, 0, 1, 0)
+
+Button9.Name = "Button9"
+Button9.Parent = Loadouts2
+Button9.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Button9.BorderSizePixel = 0
+Button9.Position = UDim2.new(0, 0, -0.00375939859, 0)
+Button9.Size = UDim2.new(0, 214, 0, 31)
+Button9.Font = Enum.Font.SourceSans
+Button9.Text = "Buy Arrow"
+Button9.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button9.TextSize = 20.000
+Button9.MouseButton1Down:connect(function()
+game:GetService("ReplicatedStorage").BuyItemRemote.Arrow:FireServer()
+
+end)
+
+Button10.Name = "Button10"
+Button10.Parent = Loadouts2
+Button10.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Button10.BorderSizePixel = 0
+Button10.Position = UDim2.new(0, 0, 0.07466165599, 0)
+Button10.Size = UDim2.new(0, 214, 0, 31)
+Button10.Font = Enum.Font.SourceSans
+Button10.Text = "Buy Rokakaka"
+Button10.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button10.TextSize = 20.000
+Button10.MouseButton1Down:connect(function()
+game:GetService("ReplicatedStorage").BuyItemRemote.Rokakaka:FireServer()
+
+end)
+Button11.Name = "Button11"
+Button11.Parent = Loadouts2
+Button11.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Button11.BorderSizePixel = 0
+Button11.Position = UDim2.new(0, 0, 0.14556391339, 0)
+Button11.Size = UDim2.new(0, 214, 0, 31)
+Button11.Font = Enum.Font.SourceSans
+Button11.Text = "Buy Mysterious Camera"
+Button11.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button11.TextSize = 20.000
+Button11.MouseButton1Down:connect(function()
+game:GetService("ReplicatedStorage").BuyItemRemote.Camera:FireServer()
+
+end)
+Button12.Name = "Button12"
+Button12.Parent = Loadouts2
+Button12.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Button12.BorderSizePixel = 0
+Button12.Position = UDim2.new(0, 0, 0.21646617079, 0)
+Button12.Size = UDim2.new(0, 214, 0, 31)
+Button12.Font = Enum.Font.SourceSans
+Button12.Text = "Buy Stop Sign"
+Button12.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button12.TextSize = 20.000
+Button12.MouseButton1Down:connect(function()
+game:GetService("ReplicatedStorage").BuyItemRemote.StopSign:FireServer()
+
+end)
+Button13.Name = "Button13"
+Button13.Parent = Loadouts2
+Button13.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Button13.BorderSizePixel = 0
+Button13.Position = UDim2.new(-0.00436681043, 0, 0.28736842819, 0)
+Button13.Size = UDim2.new(0, 214, 0, 31)
+Button13.Font = Enum.Font.SourceSans
+Button13.Text = "Buy Hamon Manual"
+Button13.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button13.TextSize = 20.000
+Button13.MouseButton1Down:connect(function()
+game:GetService("ReplicatedStorage").BuyItemRemote.Hamon:FireServer()
+
+end)
+Button14.Name = "Button14"
+Button14.Parent = Loadouts2
+Button14.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Button14.BorderSizePixel = 0
+Button14.Position = UDim2.new(0, 0, 0.35827068559, 0)
+Button14.Size = UDim2.new(0, 214, 0, 31)
+Button14.Font = Enum.Font.SourceSans
+Button14.Text = "Buy Stone Mask"
+Button14.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button14.TextSize = 20.000
+Button14.MouseButton1Down:connect(function()
+game:GetService("ReplicatedStorage").BuyItemRemote.Vampire:FireServer()
+
+end)
+
+TextLabel2.Parent = Frame3
+TextLabel2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel2.BackgroundTransparency = 1.000
+TextLabel2.BorderSizePixel = 0
+TextLabel2.Position = UDim2.new(0.0145161271, 0, 0.14872167, 0)
+TextLabel2.Size = UDim2.new(0, 136, 0, 5)
+TextLabel2.Font = Enum.Font.SourceSans
+TextLabel2.Text = "Sell Item:           "
+TextLabel2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel2.TextSize = 25.000
+-- Scripts:
+
+local function MISQU_fake_script() -- 
+	local script = Instance.new('LocalScript', SakuraStandGUI)
+
+	
+	local Frame3 = script.Parent.Frame3
+	local Storage2 = script.Parent.Frame3.Storage2
+	local ArcadeSpin = script.Parent.Frame3.ArcadeSpin	
+	local Storage4 = script.Parent.Frame3.Storage4
+	local Storage3 = script.Parent.Frame3.Storage3
+	local Storage5 = script.Parent.Frame3.Storage5
+	local Storage1 = script.Parent.Frame3.Storage1
+	local hotkey = Enum.KeyCode.Insert
+	local F4 = script.Parent.Frame3.F4
+	local cred2 = script.Parent.Frame3.cred2
+	local cred = script.Parent.Frame3.cred2
+	Frame3.Visible = true
+	Frame3.Draggable = true
+	
+	
+	local UIS = game:GetService("UserInputService")
+	local open = false
+	UIS.InputBegan:Connect(function(key, gp)
+				if key.KeyCode == hotkey then
+					Frame3.Visible = true
+			if open == false then
+						open = true
+						Frame3:TweenPosition(
+							UDim2.new(0.392242986, 0, 0.348, 0),
+							"InOut",
+							"Quad",
+							1.1,
+							false
+						)
+				Frame3.Visible = open
+			elseif open == true then
+						open = false
+						Frame3:TweenPosition(
+							UDim2.new(0.392242986, 0, 1.5, 0),
+							"InOut",
+							"Quad",
+							1.1,
+							false
+							)
+						wait(2)
+				Frame3.Visible = open
+			end	
+		end
+	end)
+end
+coroutine.wrap(MISQU_fake_script)()
