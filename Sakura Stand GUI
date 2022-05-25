@@ -330,7 +330,7 @@ cred2.BorderSizePixel = 0
 cred2.Position = UDim2.new(0.047465572, 0, 0.902526438, 0)
 cred2.Size = UDim2.new(0, 9, 0, 12)
 cred2.Font = Enum.Font.SourceSans
-cred2.Text = "Zal"
+cred2.Text = "Zal#1979 on discord"
 cred2.TextColor3 = Color3.fromRGB(255, 255, 255)
 cred2.TextSize = 25.000
 
