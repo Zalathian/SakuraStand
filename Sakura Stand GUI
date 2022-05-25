@@ -133,7 +133,7 @@ ArcadeSpin.BorderSizePixel = 0
 ArcadeSpin.Position = UDim2.new(0.720000005, 0, 0.180999994, 0)
 ArcadeSpin.Size = UDim2.new(0, 156, 0, 31)
 ArcadeSpin.Font = Enum.Font.SourceSans
-ArcadeSpin.Text = "Arcade Spin $250"
+ArcadeSpin.Text = "Arcade Spin $350"
 ArcadeSpin.TextColor3 = Color3.fromRGB(255, 255, 255)
 ArcadeSpin.TextSize = 20.000
 ArcadeSpin.MouseButton1Down:connect(function()
