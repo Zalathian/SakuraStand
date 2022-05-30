@@ -652,7 +652,7 @@ local function MISQU_fake_script() --
 	local Storage3 = script.Parent.Frame3.Storage3
 	local Storage5 = script.Parent.Frame3.Storage5
 	local Storage1 = script.Parent.Frame3.Storage1
-	local hotkey = Enum.KeyCode.Insert
+	local hotkey = Enum.KeyCode.L
 	local F4 = script.Parent.Frame3.F4
 	local cred2 = script.Parent.Frame3.cred2
 	local cred = script.Parent.Frame3.cred2
