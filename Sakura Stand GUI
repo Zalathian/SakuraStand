@@ -36,6 +36,8 @@ local Button11 = Instance.new("TextButton")
 local Button12 = Instance.new("TextButton")
 local Button13 = Instance.new("TextButton")
 local Button14 = Instance.new("TextButton")
+local Button15 = Instance.new("TextButton")
+local Button16 = Instance.new("TextButton")
 local TextLabel2 = Instance.new("TextLabel")
 local Frame4 = Instance.new("ImageButton")
 
@@ -398,7 +400,7 @@ cred2.Name = "cred2"
 cred2.Parent = Frame3
 cred2.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 cred2.BorderSizePixel = 0
-cred2.Position = UDim2.new(0.471465572, 0, 0.902526438, 0)
+cred2.Position = UDim2.new(0.51465572, 0, 0.902526438, 0)
 cred2.Size = UDim2.new(0, 9, 0, 12)
 cred2.Font = Enum.Font.SourceSans
 cred2.Text = "Zal#1979, Only way to turn off autofarm is to reset, L 2 Open"
@@ -544,13 +546,19 @@ Button8.Name = "Button8"
 Button8.Parent = Loadouts
 Button8.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
 Button8.BorderSizePixel = 0
-Button8.Position = UDim2.new(0, 0, 0.50007520039, 0)
+Button8.Position = UDim2.new(0, 0, 0.58007520039, 0)
 Button8.Size = UDim2.new(0, 214, 0, 31)
 Button8.Font = Enum.Font.SourceSans
 Button8.Text = "Sell All Items"
 Button8.TextColor3 = Color3.fromRGB(255, 255, 255)
 Button8.TextSize = 20.000
 Button8.MouseButton1Down:connect(function()
+local args = {
+    [1] = "Spin Manual"
+}
+
+game:GetService("ReplicatedStorage").GlobalUsedRemotes.SellItem:FireServer(unpack(args))
+
 local args = {
     [1] = "Haunted Sword"
 }
@@ -697,6 +705,41 @@ Button14.TextColor3 = Color3.fromRGB(255, 255, 255)
 Button14.TextSize = 20.000
 Button14.MouseButton1Down:connect(function()
 game:GetService("ReplicatedStorage").BuyItemRemote.Vampire:FireServer()
+
+end)
+
+Button15.Name = "Button14"
+Button15.Parent = Loadouts2
+Button15.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Button15.BorderSizePixel = 0
+Button15.Position = UDim2.new(0, 0, 0.35827068559, 0)
+Button15.Size = UDim2.new(0, 214, 0, 31)
+Button15.Font = Enum.Font.SourceSans
+Button15.Text = "Buy Spin Manual"
+Button15.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button15.TextSize = 20.000
+Button15.MouseButton1Down:connect(function()
+game:GetService("ReplicatedStorage").BuyItemRemote.Spin:FireServer()
+
+
+end)
+
+Button16.Name = "Button16"
+Button16.Parent = Loadouts
+Button16.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Button16.BorderSizePixel = 0
+Button16.Position = UDim2.new(0, 0, 0.50007520039, 0)
+Button16.Size = UDim2.new(0, 214, 0, 31)
+Button16.Font = Enum.Font.SourceSans
+Button16.Text = "Sell Spin Manual"
+Button16.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button16.TextSize = 20.000
+Button16.MouseButton1Down:connect(function()
+local args = {
+    [1] = "Spin Manual"
+}
+
+game:GetService("ReplicatedStorage").GlobalUsedRemotes.SellItem:FireServer(unpack(args))
 
 end)
 
