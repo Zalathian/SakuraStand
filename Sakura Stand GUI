@@ -292,7 +292,7 @@ Autofarm.BorderSizePixel = 0
 Autofarm.Position = UDim2.new(0.259000005, 0, 0.7581353878, 0)
 Autofarm.Size = UDim2.new(0, 266, 0, 31)
 Autofarm.Font = Enum.Font.SourceSans
-Autofarm.Text = "Autofarm Use in PS (buggy) but works"
+Autofarm.Text = "Broken Will be fixed in a few days from now"
 Autofarm.TextColor3 = Color3.fromRGB(255, 255, 255)
 Autofarm.TextSize = 20.000
 Autofarm.MouseButton1Down:connect(function()
