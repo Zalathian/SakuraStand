@@ -14,6 +14,7 @@ local WP3 = Instance.new("TextButton")
 local WP4 = Instance.new("TextButton")
 local WP5 = Instance.new("TextButton")
 local WP6 = Instance.new("TextButton")
+local Autofarm = Instance.new("TextButton")
 local TP1 = Instance.new("TextButton")
 local IY = Instance.new("TextButton")
 local cred = Instance.new("TextLabel")
@@ -282,6 +283,76 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-519, -3
 
 end)
 
+Autofarm.Name = "Autofarm"
+Autofarm.Parent = Frame3
+Autofarm.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Autofarm.BorderSizePixel = 0
+Autofarm.Position = UDim2.new(0.259000005, 0, 0.7581353878, 0)
+Autofarm.Size = UDim2.new(0, 266, 0, 31)
+Autofarm.Font = Enum.Font.SourceSans
+Autofarm.Text = "Autofarm Use in PS (buggy) but works"
+Autofarm.TextColor3 = Color3.fromRGB(255, 255, 255)
+Autofarm.TextSize = 20.000
+Autofarm.MouseButton1Down:connect(function()
+while true do
+    wait()
+          for i,v in pairs(game:GetService("Workspace").Item:GetDescendants()) do
+          if v:IsA("ClickDetector") then
+          fireclickdetector(v)
+
+
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Item.Box.Box.CFrame
+
+local args = {
+    [1] = "Haunted Sword"
+}
+
+game:GetService("ReplicatedStorage").GlobalUsedRemotes.SellItem:FireServer(unpack(args))
+
+local args = {
+    [1] = "Rokakaka"
+}
+
+game:GetService("ReplicatedStorage").GlobalUsedRemotes.SellItem:FireServer(unpack(args))
+
+local args = {
+    [1] = "Arrow"
+}
+
+game:GetService("ReplicatedStorage").GlobalUsedRemotes.SellItem:FireServer(unpack(args))
+
+local args = {
+    [1] = "Mysterious Camera"
+}
+
+game:GetService("ReplicatedStorage").GlobalUsedRemotes.SellItem:FireServer(unpack(args))
+
+local args = {
+    [1] = "Stone Mask"
+}
+
+game:GetService("ReplicatedStorage").GlobalUsedRemotes.SellItem:FireServer(unpack(args))
+
+local args = {
+    [1] = "Stop Sign"
+}
+
+game:GetService("ReplicatedStorage").GlobalUsedRemotes.SellItem:FireServer(unpack(args))
+
+local args = {
+    [1] = "Hamon Manual"
+}
+
+game:GetService("ReplicatedStorage").GlobalUsedRemotes.SellItem:FireServer(unpack(args))
+      end
+   end
+end 
+
+
+
+
+end)
+
 TP1.Name = "TP1"
 TP1.Parent = Frame3
 TP1.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
@@ -327,10 +398,10 @@ cred2.Name = "cred2"
 cred2.Parent = Frame3
 cred2.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 cred2.BorderSizePixel = 0
-cred2.Position = UDim2.new(0.071465572, 0, 0.902526438, 0)
+cred2.Position = UDim2.new(0.471465572, 0, 0.902526438, 0)
 cred2.Size = UDim2.new(0, 9, 0, 12)
 cred2.Font = Enum.Font.SourceSans
-cred2.Text = "Zal#1979"
+cred2.Text = "Zal#1979, Only way to turn off autofarm is to reset, L 2 Open"
 cred2.TextColor3 = Color3.fromRGB(255, 255, 255)
 cred2.TextSize = 25.000
 
